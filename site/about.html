@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ГрафКомикс | О проекте</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #7B1FA2;
+            --primary-light: #9C27B0;
+            --primary-dark: #4A148C;
+            --secondary: rgba(231, 167, 242, 0.37);
+            --background: #FFFFFF;
+            --text: #212121;
+            --text-light: #757575;
+            --card-bg: #F5F5F5;
+            --border: #E0E0E0;
+        }
+        
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            color: var(--text);
+            background-color: var(--background);
+        }
+        
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 600;
+            color: var(--primary-light);
+        }
+        
+        h1 {
+            font-size: 2.8rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        h2 {
+            font-size: 2.2rem;
+            margin-bottom: 1.8rem;
+            border-bottom: 2px solid var(--primary);
+            padding-bottom: 0.5rem;
+            display: inline-block;
+        }
+        
+        header {
+            background: white;
+            padding: 1rem 0;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            border-bottom: 1px solid var(--border);
+        }
+        
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            padding: 1rem;
+            flex-wrap: wrap;
+        }
+        
+        nav a {
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 1.1rem;
+            transition: all 0.3s;
+            padding: 0.5rem 1.2rem;
+            border-radius: 4px;
+            border: 1px solid transparent;
+        }
+        
+        nav a:hover {
+            color: white;
+            background: var(--primary-light);
+            border-color: var(--primary-light);
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        
+        .project-hero {
+            text-align: center;
+            padding: 4rem 1rem;
+            margin-bottom: 3rem;
+            background-color: white;
+            color: black;
+        }
+        
+        .project-description {
+            background: var(--card-bg);
+            padding: 2.5rem;
+            border-radius: 8px;
+            border: 1px solid var(--border);
+            margin-bottom: 3rem;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        }
+        
+        .project-goals {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+        
+        .goal-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            border: 1px solid var(--border);
+            transition: all 0.3s;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        }
+        
+        .goal-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(123, 31, 162, 0.1);
+            border-color: var(--primary);
+        }
+        
+        .goal-card h3 {
+            color: var(--primary);
+            margin-top: 0;
+        }
+        
+        footer {
+            background: var(--primary-dark);
+            color: white;
+            text-align: center;
+            margin-top: 100px;
+            padding: 2rem 0;
+            border-top: 1px solid var(--primary-light);
+            margin-top: 3rem;
+        }
+        
+        .back-link {
+            display: inline-block;
+            margin-top: 2rem;
+            color: var(--primary);
+            text-decoration: none;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 600;
+            transition: all 0.3s;
+        }
+        
+        .back-link:hover {
+            color: var(--primary-light);
+        }
+        
+        .active {
+            background: var(--primary-light);
+            color: white !important;
+        }
+    </style>
+</head>
+<body>
+    <!-- Шапка сайта с навигацией -->
+    <header>
+        <nav>
+            <a href="index.html">Главная</a>
+            <a href="about.html" class="active">О проекте</a>
+            <a href="team.html">Участники</a>
+            <a href="j.html">Журнал</a>
+            <a href="res.html">Ресурсы</a>
+        </nav>
+    </header>
+
+    <!-- Основной контент -->
+    <main class="container">
+        <section class="project-hero">
+            <h1>О проекте "ГрафКомикс"</h1>
+            <p style="font-size: 1.2rem; max-width: 800px; margin: 0 auto;">
+                Основная цель проекта «ГрафКомикс» заключается в создании уникальной платформы для русскоговорящих читателей и создателей комиксов. Мы стремимся предоставить авторам возможность публиковать свои комиксы, а читателям — легко находить и наслаждаться новыми произведениями.
+            </p>
+        </section>
+
+        <!-- Описание проекта -->
+        <section class="project-description">
+            <h2>Описание проекта</h2>
+            <p>
+                В последние годы на международном рынке наблюдается значительный рост популярности платформ для публикации комиксов, таких как Webtoon и Tapas. Эти сервисы не только поддерживают авторов, но и обеспечивают высокий уровень продвижения их работ. Комиксы, размещенные на этих платформах, становятся основой для создания сериалов и фильмов — например, «Heartstopper» от Netflix.  
+            </p>
+            <p>
+                По статистике, количество читателей манги и веб-комиксов на английском языке превышает 32 миллиона человек ежедневно. В России, согласно данным одного из ведущих сайтов для чтения веб-комиксов, Mangalib, это число составляет более 13 миллионов и продолжает расти. С каждым годом отношение к индустрии комиксов меняется — она начинает восприниматься всерьез. 
+            </p>
+            <p>
+                Арт-маркеты и фестивали комиксов, проходящие по всей стране, становятся важной площадкой для авторов, которые могут представить свои работы и продать физические копии комиксов. Важно отметить, что развитие технологий также влияет на популярность комиксов: появляются веб-комиксы с звуковым и анимационным сопровождением, что делает их более привлекательными для аудитории. Все это подтверждает актуальность нашего проекта и необходимость его реализации.
+            </p>
+            <p>
+                Основная цель проекта «ГрафКомикс» заключается в создании уникальной платформы для русскоговорящих читателей и создателей комиксов. Мы стремимся предоставить авторам возможность публиковать свои комиксы, а читателям — легко находить и наслаждаться новыми произведениями. Для достижения этой цели мы ставим в приоритет создание пространства для общения и взаимодействия между художниками и их аудиторией. 
+            </p>
+            <p>
+                Мы стремимся к тому, чтобы наши пользователи чувствовали себя частью активного и поддерживающего сообщества, где они могут получать обратную связь, делиться советами с опытными коллегами, а также находить вдохновение для создания новых работ. Наша платформа будет способствовать не только публикации оригинальных комиксов на русском языке, но и развитию навыков авторов через образовательные материалы и ресурсы.
+            </p>
+            <p>
+                Мы стремимся выпустить платформу «ГрафКомикс» в свободный доступ в интернете с активной поддержкой в социальных сетях. Это позволит нам не только монетизировать функции платформы, но и расширять её функционал в соответствии с запросами пользователей. 
+            </p>
+
+        </section>
+        <!-- Цель проекта -->
+        <section>
+            <h2>Цель проекта</h2>
+            <div class="project-goals">
+                <div class="goal-card">
+                    <h3>Основная цель</h3>
+                    <p>Основная цель «ГрафКомикса» - предоставить русскоговорящим читателям и создателям комиксов платформу, для публикации собственных комиксов и их прочтения. Для грамотного достижения этой цели мы ставим в приоритет создание пространства для общения и взаимодействия между художниками и их читателями.</p>
+                </div>
+            </div>
+        </section>
+
+        <a href="index.html" class="back-link">← Вернуться на главную</a>
+    </main>
+
+    <!-- Подвал сайта -->
+    <footer>
+        <p>© 2025 ГрафКомикс | Проектная деятельность</p>
+    </footer>
+</body>
+</html>
