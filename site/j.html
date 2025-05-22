@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ГрафКомикс | Журнал</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #7B1FA2;
+            --primary-light: #9C27B0;
+            --primary-dark: #4A148C;
+            --secondary: #E1BEE7;
+            --background: #FFFFFF;
+            --text: #212121;
+            --text-light: #757575;
+            --card-bg: #F5F5F5;
+            --border: #E0E0E0;
+        }
+        
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            color: var(--text);
+            background-color: var(--background);
+        }
+        
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 600;
+            color: var(--primary-light);
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        header {
+            background: white;
+            padding: 1rem 0;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            border-bottom: 1px solid var(--border);
+        }
+        
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            padding: 1rem;
+        }
+        
+        nav a {
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 1.1rem;
+            transition: all 0.3s;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+        }
+        
+        nav a:hover {
+            color: white;
+            background: var(--primary-light);
+        }
+        
+        
+        .hero p {
+            font-size: 1.2rem;
+            color: white;
+            margin-bottom: 2rem;
+        }
+        
+        footer {
+            background: var(--primary-dark);
+            color: white;
+            text-align: center;
+            margin-top: 100px;
+            margin-top: 100px;
+            padding: 2rem 0;
+            border-top: 1px solid var(--primary-light);
+        }
+        
+        footer p {
+            margin: 0.5rem 0;
+            color: white;
+        }
+        
+        .active {
+            background: var(--primary-light);
+            color: white !important;
+        }
+    </style>
+</head>
+<body style="margin-left: 100px; margin-right: 100px;">
+<header style="padding-left: 40px; padding-right: 40px;">
+<div>
+    
+        <nav>
+            <a href="index.html">Главная</a>
+            <a href="about.html">О проекте</a>
+            <a href="team.html">Участники</a>
+            <a href="j.html" class="active">Журнал</a>
+            <a href="res.html">Ресурсы</a>
+        </nav>
+  
+
+            <div class="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+</header>
+
+	<div class="news">
+		<section class = "new">
+				<h2>Посетили интервью от проекта TalkIT</h2>
+				<p> 
+				7 мая 2025 года вышел долгожданный выпуск интервью-подкаста от проекта TalkIT, который уже успел завоевать популярность среди слушателей.<br> В этом выпуске в роли приглашенного гостя выступила талантливый тимлид нашего проекта, Софья Берченко. <br>
+                В ходе увлекательного интервью Софья поделилась своими мыслями и переживаниями о том, как именно возникла идея запустить наш проект.<br> Она рассказала о вдохновении, которое стало катализатором для начала работы, а также о том, какие трудности и сложности ей и команде пришлось преодолеть на пути к реализации задуманного. <br>
+                Софья также затронула важные аспекты будущего проекта, делясь своими видениями и надеждами на то, каким образом он будет развиваться в дальнейшем.<br> Ее искренние размышления и профессиональный опыт делают это интервью особенно ценным для всех, кто интересуется миром технологий и стартапов.
+				</p>
+		</section>
+		
+		
+		<section class = "new">
+			<h2>Команда нашего проекта посетила День открытых дверей Московского Политеха</h2>
+			<p> 
+				На прошедшем Дне открытых дверей в Московском Политехническом университете команда нашего проекта представила свои достижения и поделилась опытом с абитуриентами.<br> Мы рассказали о целях и задачах нашего проекта, а также о том чего мы уже достигли в рамках проекта.<br>
+                Участники мероприятия смогли задать вопросы и узнать больше о том, как можно стать частью нашей команды.<br> Мы надеемся, что наш рассказ вдохновит студентов на выбор карьеры в сфере технологий и инноваций.<br> Это был отличный шанс не только поделиться информацией, но и установить новые контакты с будущими талантами!
+			</p>
+		</section>
+		<section class = "new">
+			<h2>Итоги работы</h2>
+			<p>
+				С радостью сообщаем, что сайт "ГрафКомикс" уже функционирует и готов к встрече с любителями комиксов!<br> В ближайшее время вы сможете ознакомиться с работами талантливых художников, которые представят уникальные истории и стили.<br> 
+                На платформе вас ждут комиксы от авторов России, возможность оставлять комментарии и отзывы, а также интерактивное взаимодействие с авторами.<br> Мы активно развиваем наши социальные сети — подписывайтесь на Telegram, TikTok и VKontakte, чтобы не пропустить анонсы новых работ,обзоры комиксов и рекомендации начинающим художникам. <br>
+                Следите за новостями и готовьтесь к увлекательному путешествию в мир комиксов на "Граф Комикс"!
+			</p>
+		</section>
+
+	</div>
+
+    <footer>
+        <p>© 2025 ГрафКомикс | Проектная деятельность</p>
+    </footer>
+
+</body>
+</html> 
